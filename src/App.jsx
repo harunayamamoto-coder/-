@@ -15,10 +15,10 @@ const flavors = [
     name: 'うじ抹茶味',
     description:
       '香り高い宇治抹茶を贅沢に使用。ほろ苦さと甘みが絶妙な春の限定フレーバーです。',
-    color: 'bg-green-100',
-    textColor: 'text-green-800',
+    color: 'bg-teal-100',
+    textColor: 'text-teal-900',
     label: '期間限定',
-    labelColor: 'bg-green-600',
+    labelColor: 'bg-teal-700',
     price: '300円 (税込)',
     emoji: '🍵',
   },
@@ -27,10 +27,10 @@ const flavors = [
     name: 'きび糖味',
     description:
       'サトウキビの素朴な甘みが、うどーなつのもちもち食感を一番引き立てる定番の味。',
-    color: 'bg-orange-50',
-    textColor: 'text-orange-900',
+    color: 'bg-cyan-50',
+    textColor: 'text-cyan-900',
     label: '定番',
-    labelColor: 'bg-orange-400',
+    labelColor: 'bg-cyan-600',
     price: '300円 (税込)',
     emoji: '🍩',
   },
@@ -83,37 +83,37 @@ const App = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#fff5f7] font-sans text-gray-800 selection:bg-pink-200">
+    <div className="min-h-screen bg-[#effcf8] font-sans text-slate-800 selection:bg-teal-200">
       <nav
         className={`fixed z-50 w-full transition-all duration-300 ${
-          scrolled ? 'bg-white/90 py-3 shadow-sm backdrop-blur-md' : 'bg-transparent py-5'
+          scrolled ? 'bg-[#f4fffc]/90 py-3 shadow-sm backdrop-blur-md' : 'bg-transparent py-5'
         }`}
       >
         <div className="container mx-auto flex items-center justify-between px-6">
           <div className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-red-600 text-xl font-bold text-white">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-teal-700 text-xl font-bold text-white">
               丸
             </div>
             <span className="hidden text-xl font-black tracking-tighter sm:block">
-              丸亀うどーなつ <span className="text-sm text-pink-500">SPRING</span>
+              丸亀うどーなつ <span className="text-sm text-teal-500">SPRING</span>
             </span>
           </div>
 
           <div className="hidden gap-8 text-sm font-bold uppercase tracking-widest md:flex">
-            <a href="#about" className="transition-colors hover:text-pink-500">
+            <a href="#about" className="transition-colors hover:text-teal-600">
               うどーなつとは
             </a>
-            <a href="#flavor" className="transition-colors hover:text-pink-500">
+            <a href="#flavor" className="transition-colors hover:text-teal-600">
               フレーバー
             </a>
-            <a href="#howtoeat" className="transition-colors hover:text-pink-500">
+            <a href="#howtoeat" className="transition-colors hover:text-teal-600">
               楽しみ方
             </a>
             <a
               href="https://jp.marugame.com/menu/udonut/"
               target="_blank"
               rel="noreferrer"
-              className="rounded-full bg-red-600 px-5 py-2 text-white shadow-md transition-all hover:bg-red-700"
+              className="rounded-full bg-teal-700 px-5 py-2 text-white shadow-md transition-all hover:bg-teal-800"
             >
               公式サイト
             </a>
@@ -126,26 +126,27 @@ const App = () => {
       </nav>
 
       <section className="relative overflow-hidden pb-20 pt-32">
-        <div className="absolute right-0 top-0 -z-10 h-full w-1/2 rounded-l-[100px] bg-pink-100/50 animate-pulse" />
-        <div className="absolute left-10 top-20 h-20 w-20 rounded-full bg-green-200 opacity-60 blur-3xl" />
+        <div className="absolute right-0 top-0 -z-10 h-full w-1/2 rounded-l-[100px] bg-cyan-100/60 animate-pulse" />
+        <div className="absolute left-10 top-20 h-20 w-20 rounded-full bg-teal-200 opacity-70 blur-3xl" />
+        <div className="absolute bottom-10 left-1/3 -z-10 h-40 w-40 rounded-full bg-emerald-100 opacity-60 blur-3xl" />
 
         <div className="container mx-auto flex flex-col items-center px-6 md:flex-row">
           <div className="space-y-6 text-center md:w-1/2 md:text-left">
-            <div className="inline-block animate-bounce rounded-full bg-pink-500 px-4 py-1 text-xs font-bold text-white">
+            <div className="inline-block animate-bounce rounded-full bg-teal-500 px-4 py-1 text-xs font-bold text-white">
               今だけの春、届きました
             </div>
             <h1 className="text-5xl font-black leading-tight text-gray-900 md:text-7xl">
               もちもち、
               <br />
-              <span className="italic text-pink-500">春の香り。</span>
+              <span className="italic text-teal-500">涼やかな香り。</span>
             </h1>
-            <p className="mx-auto max-w-md text-lg text-gray-600 md:mx-0">
+            <p className="mx-auto max-w-md text-lg text-slate-600 md:mx-0">
               丸亀製麺自慢のうどんから生まれた、全く新しいドーナツ。期間限定の「うじ抹茶味」で、春の訪れを感じて。
             </p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row md:justify-start">
               <a
                 href="#flavor"
-                className="flex items-center justify-center gap-2 rounded-2xl bg-green-600 px-8 py-4 font-bold text-white shadow-lg shadow-green-200 transition-transform hover:-translate-y-[2px]"
+                className="flex items-center justify-center gap-2 rounded-2xl bg-teal-700 px-8 py-4 font-bold text-white shadow-lg shadow-teal-200 transition-transform hover:-translate-y-[2px]"
               >
                 <Leaf size={20} /> 抹茶味をチェック
               </a>
@@ -153,7 +154,7 @@ const App = () => {
                 href="https://jp.marugame.com/shop/"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-2xl border-2 border-pink-200 bg-white px-8 py-4 font-bold text-pink-500 transition-colors hover:bg-pink-50"
+                className="rounded-2xl border-2 border-cyan-200 bg-white/90 px-8 py-4 font-bold text-cyan-700 transition-colors hover:bg-cyan-50"
               >
                 お近くの店舗を探す
               </a>
@@ -162,16 +163,16 @@ const App = () => {
 
           <div className="relative mt-12 flex justify-center md:mt-0 md:w-1/2">
             <div className="relative h-72 w-72 md:h-96 md:w-96">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-green-400 to-pink-300 opacity-20 animate-[spin_10s_linear_infinite]" />
-              <div className="absolute left-1/2 top-1/2 flex h-64 w-64 -translate-x-1/2 -translate-y-1/2 rotate-3 flex-col items-center justify-center rounded-3xl bg-white p-8 text-center shadow-2xl md:h-80 md:w-80">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-teal-400 via-cyan-300 to-emerald-200 opacity-30 animate-[spin_10s_linear_infinite]" />
+              <div className="absolute left-1/2 top-1/2 flex h-64 w-64 -translate-x-1/2 -translate-y-1/2 rotate-3 flex-col items-center justify-center rounded-3xl bg-white/95 p-8 text-center shadow-2xl ring-1 ring-teal-100 md:h-80 md:w-80">
                 <div className="mb-4 text-6xl">🍩</div>
-                <div className="text-2xl font-black text-green-700">うじ抹茶</div>
-                <div className="mt-2 text-sm text-gray-500">もちもち食感 × 宇治抹茶</div>
-                <div className="mt-4 rounded-full bg-green-100 px-4 py-1 text-xs font-bold text-green-700">
+                <div className="text-2xl font-black text-teal-800">うじ抹茶</div>
+                <div className="mt-2 text-sm text-slate-500">もちもち食感 × 宇治抹茶</div>
+                <div className="mt-4 rounded-full bg-teal-100 px-4 py-1 text-xs font-bold text-teal-700">
                   期間限定
                 </div>
               </div>
-              <div className="absolute right-0 top-0 text-4xl animate-bounce">🌸</div>
+              <div className="absolute right-0 top-0 text-4xl animate-bounce">💧</div>
               <div className="absolute bottom-10 left-0 text-4xl animate-bounce delay-700">
                 🍃
               </div>
@@ -180,24 +181,24 @@ const App = () => {
         </div>
       </section>
 
-      <section id="about" className="bg-white py-20">
+      <section id="about" className="bg-[#f7fffd] py-20">
         <div className="container mx-auto px-6">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-3xl font-black">丸亀うどーなつ 3つの秘密</h2>
-            <div className="mx-auto h-1 w-16 bg-pink-500" />
+            <div className="mx-auto h-1 w-16 bg-teal-500" />
           </div>
 
           <div className="grid gap-12 md:grid-cols-3">
             {features.map((feature) => (
               <div
                 key={feature.title}
-                className="group rounded-3xl bg-[#fff5f7] p-8 text-center transition-colors hover:bg-pink-50"
+                className="group rounded-3xl bg-[#ecfbf7] p-8 text-center transition-colors hover:bg-cyan-50"
               >
                 <div className="mb-6 text-5xl transition-transform group-hover:scale-110">
                   {feature.icon}
                 </div>
                 <h3 className="mb-4 text-xl font-bold">{feature.title}</h3>
-                <p className="leading-relaxed text-gray-600">{feature.desc}</p>
+                <p className="leading-relaxed text-slate-600">{feature.desc}</p>
               </div>
             ))}
           </div>
@@ -207,7 +208,7 @@ const App = () => {
       <section id="flavor" className="overflow-hidden py-20">
         <div className="container mx-auto px-6">
           <div className="mb-16 flex flex-col items-center">
-            <span className="font-bold uppercase tracking-widest text-green-600">
+            <span className="font-bold uppercase tracking-widest text-teal-700">
               Special Flavor
             </span>
             <h2 className="mt-2 text-4xl font-black">選べる2つの幸せ</h2>
@@ -228,12 +229,12 @@ const App = () => {
                   <h3 className={`mb-6 mt-4 text-4xl font-black ${flavor.textColor}`}>
                     {flavor.name}
                   </h3>
-                  <p className="mb-8 max-w-xs leading-relaxed text-gray-700">
+                  <p className="mb-8 max-w-xs leading-relaxed text-slate-700">
                     {flavor.description}
                   </p>
                   <div className="flex items-center gap-4">
                     <span className="text-2xl font-black">{flavor.price}</span>
-                    <span className="text-xs text-gray-500">(1袋5個入り)</span>
+                    <span className="text-xs text-slate-500">(1袋5個入り)</span>
                   </div>
                 </div>
                 <div className="absolute bottom-[-20px] right-[-20px] flex h-48 w-48 rotate-[-15deg] items-center justify-center rounded-full bg-white/40 text-7xl transition-transform duration-700 group-hover:rotate-0">
@@ -247,7 +248,7 @@ const App = () => {
 
       <section
         id="howtoeat"
-        className="rounded-t-[60px] bg-gray-900 py-20 text-white md:rounded-t-[100px]"
+        className="rounded-t-[60px] bg-slate-900 py-20 text-white md:rounded-t-[100px]"
       >
         <div className="container mx-auto px-6">
           <div className="flex flex-col items-center gap-16 md:flex-row">
@@ -255,43 +256,43 @@ const App = () => {
               <h2 className="mb-8 text-4xl font-black leading-tight md:text-5xl">
                 おいしさの決め手は
                 <br />
-                <span className="text-pink-400">「5回のシェイク」</span>
+                <span className="text-cyan-300">「5回のシェイク」</span>
               </h2>
               <div className="space-y-8">
                 {shakeSteps.map((item) => (
                   <div key={item.step} className="flex items-start gap-6">
-                    <span className="text-2xl font-black text-pink-500">{item.step}</span>
+                    <span className="text-2xl font-black text-teal-300">{item.step}</span>
                     <div>
                       <h4 className="mb-1 text-xl font-bold">{item.title}</h4>
-                      <p className="text-gray-400">{item.desc}</p>
+                      <p className="text-slate-300">{item.desc}</p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
             <div className="flex justify-center md:w-1/2">
-              <div className="flex h-80 w-64 flex-col items-center justify-center rounded-3xl border-2 border-dashed border-white/20 bg-white/10 animate-[bounce_2s_infinite]">
+              <div className="flex h-80 w-64 flex-col items-center justify-center rounded-3xl border-2 border-dashed border-cyan-200/30 bg-cyan-100/10 animate-[bounce_2s_infinite]">
                 <div className="mb-4 text-6xl">🛍️</div>
-                <div className="text-xl font-bold text-pink-400">SHAKE IT!</div>
-                <p className="mt-2 text-sm text-gray-400">楽しく振っておいしく！</p>
+                <div className="text-xl font-bold text-cyan-300">SHAKE IT!</div>
+                <p className="mt-2 text-sm text-slate-300">楽しく振っておいしく！</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <footer className="border-t border-white/10 bg-gray-900 px-6 py-12 text-gray-500">
+      <footer className="border-t border-white/10 bg-slate-900 px-6 py-12 text-slate-400">
         <div className="container mx-auto">
           <div className="mb-12 flex flex-col items-center justify-between gap-8 md:flex-row">
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-red-600 text-sm font-bold text-white">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-teal-700 text-sm font-bold text-white">
                 丸
               </div>
               <span className="text-lg font-black text-white">丸亀うどーなつ</span>
             </div>
             <div className="flex gap-6">
               <Share2 className="cursor-pointer transition-colors hover:text-white" size={20} />
-              <Heart className="cursor-pointer transition-colors hover:text-pink-500" size={20} />
+              <Heart className="cursor-pointer transition-colors hover:text-teal-300" size={20} />
               <MapPin className="cursor-pointer transition-colors hover:text-white" size={20} />
             </div>
           </div>
@@ -300,7 +301,7 @@ const App = () => {
       </footer>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center gap-8 bg-white p-10 text-2xl font-black">
+        <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center gap-8 bg-[#f4fffc] p-10 text-2xl font-black text-slate-800">
           <button className="absolute right-6 top-6" onClick={() => setIsMenuOpen(false)}>
             <X size={32} />
           </button>
@@ -317,7 +318,7 @@ const App = () => {
             href="https://jp.marugame.com/menu/udonut/"
             target="_blank"
             rel="noreferrer"
-            className="text-red-600"
+            className="text-teal-700"
           >
             公式サイト
           </a>
@@ -329,7 +330,7 @@ const App = () => {
           href="https://jp.marugame.com/menu/udonut/"
           target="_blank"
           rel="noreferrer"
-          className="flex w-full items-center justify-center gap-2 rounded-2xl bg-red-600 py-4 font-bold text-white shadow-2xl"
+          className="flex w-full items-center justify-center gap-2 rounded-2xl bg-teal-700 py-4 font-bold text-white shadow-2xl shadow-teal-900/20"
         >
           店舗検索・詳細はこちら <ExternalLink size={18} />
         </a>

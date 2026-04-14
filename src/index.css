@@ -9,7 +9,11 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background: #fff5f7;
+  background:
+    radial-gradient(circle at top left, rgba(45, 212, 191, 0.18), transparent 30%),
+    radial-gradient(circle at top right, rgba(103, 232, 249, 0.18), transparent 28%),
+    linear-gradient(180deg, #effcf8 0%, #f7fffd 48%, #ecfeff 100%);
+  color: #1e293b;
 }
 
 a {
