@@ -12,7 +12,7 @@ import {
 const flavors = [
   {
     id: 'matcha',
-    name: 'うじ抹茶味',
+    name: '宇治抹茶味',
     description:
       '香り高い宇治抹茶を贅沢に使用。ほろ苦さと甘みが絶妙な春の限定フレーバーです。',
     color: 'bg-teal-100',
@@ -58,7 +58,7 @@ const shakeSteps = [
   {
     step: '01',
     title: 'パウダーを選ぶ',
-    desc: '「うじ抹茶味」か「きび糖味」のパウダーを1スプーン入れます。',
+    desc: '「宇治抹茶味」か「きび糖味」のパウダーを1スプーン入れます。',
   },
   {
     step: '02',
@@ -141,7 +141,7 @@ const App = () => {
               <span className="italic text-teal-500">涼やかな香り。</span>
             </h1>
             <p className="mx-auto max-w-md text-lg text-slate-600 md:mx-0">
-              丸亀製麺自慢のうどんから生まれた、全く新しいドーナツ。期間限定の「うじ抹茶味」で、春の訪れを感じて。
+              丸亀製麺自慢のうどんから生まれた、全く新しいドーナツ。期間限定の「宇治抹茶味」で、春の訪れを感じて。
             </p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row md:justify-start">
               <a
@@ -166,7 +166,7 @@ const App = () => {
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-teal-400 via-cyan-300 to-emerald-200 opacity-30 animate-[spin_10s_linear_infinite]" />
               <div className="absolute left-1/2 top-1/2 flex h-64 w-64 -translate-x-1/2 -translate-y-1/2 rotate-3 flex-col items-center justify-center rounded-3xl bg-white/95 p-8 text-center shadow-2xl ring-1 ring-teal-100 md:h-80 md:w-80">
                 <div className="mb-4 text-6xl">🍩</div>
-                <div className="text-2xl font-black text-teal-800">うじ抹茶</div>
+                <div className="text-2xl font-black text-teal-800">宇治抹茶</div>
                 <div className="mt-2 text-sm text-slate-500">もちもち食感 × 宇治抹茶</div>
                 <div className="mt-4 rounded-full bg-teal-100 px-4 py-1 text-xs font-bold text-teal-700">
                   期間限定
