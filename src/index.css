@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #fff5f7;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
